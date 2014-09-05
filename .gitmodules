@@ -1,0 +1,3 @@
+[submodule "wp-content/plugins/arche-utility"]
+	path = wp-content/plugins/arche-utility
+	url = https://marius%40ywam.nl@github.com/sccmain/arche-utility.git
