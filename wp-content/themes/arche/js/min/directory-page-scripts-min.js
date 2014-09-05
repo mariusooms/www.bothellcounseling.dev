@@ -1,1 +1,0 @@
-!function($,i,o){"use strict";var n={previousLoctions:!1,initLocationFilter:function(){$("#m-locations-radio input:radio").on("ifClicked",function(i){var o=$(this);n.previousLoctions&&o.val()===n.previousLoctions?(o.iCheck("uncheck"),n.previousLoctions=!1):n.previousLoctions=o.val()})}};$(o).ready(function(){n.initLocationFilter()})}(jQuery,window,document);
