@@ -1,0 +1,91 @@
+/**
+ * ------------------------------------------------------------------------------------
+ * Button Layout
+ * ------------------------------------------------------------------------------------
+ */
+
+.button {
+	@include rem(padding, 10px 20px);
+	@include border-radius(5px);
+	font-family: $font-2;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFF;
+	border: none;
+}
+
+.cta {
+	width: 100%;
+	display: block;
+	background-color: $color-1;
+	&:hover {
+		color: #FFF;
+		background-color: darken($color-1, 10%);
+	}
+}
+
+.btn-switch {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+
+	&:focus {
+		outline:none;
+	}
+}
+
+/* Arrows */
+.prev, .next { 
+	position: absolute; 
+	display: block; 
+	height: 30px; 
+	width: 30px; 
+	font-size: 0;
+	background: $color-medium; 
+	color: transparent; 
+	top: 50%;
+	margin-top: -20px;
+	text-align: center;
+	@include border-radius(30px);
+}
+
+.prev.disabled:before, .next.disabled:before {
+	opacity: 0.25; 
+}
+
+.prev:before, 
+.next:before { 
+	font: normal 20px/30px 'dashicons'; 
+	color: white; 
+	opacity: 0.85;
+	text-align: center;
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale; 
+}
+
+.prev { left: 0px; }
+.prev:before { content: "\f341"; }
+
+.next { right: 0px; padding-left: 1px; }
+.next:before { content: "\f345"; }
+
+/**
+ * iCheck styling.
+ */
+ 
+ ul.icheck {
+ 	li {
+ 		color: $color-dark;
+ 		font-family: $font-1;
+ 		font-weight: 400;
+ 	}
+ 	label {
+	 	cursor: pointer;
+	 	@include rem(padding, 0 0 0 10px);
+ 	}
+ }
+ 
+
+
+

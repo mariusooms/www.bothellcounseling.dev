@@ -1,0 +1,297 @@
+/**
+ * ------------------------------------------------------------------------------------
+ * Main Layout
+ * ------------------------------------------------------------------------------------
+ */
+
+.site-container {
+	@include container;
+}
+
+.site-inner {
+	margin: 0 auto;
+	max-width: $max-width;
+}
+
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+.full-width-content .content {
+	width: 100%;
+}
+
+@include breakpoint($mobile) {
+
+	.content,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap,
+	.sidebar-primary,
+	.content-sidebar-sidebar .sidebar-secondary {
+		@include span(last 12);
+	}
+	
+	.content-sidebar-sidebar .content-sidebar-wrap,	
+	.content-sidebar .content,
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content,
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content,
+	.sidebar-content .sidebar-primary,
+	.sidebar-sidebar-content .sidebar-primary,
+	.sidebar-secondary {
+		@include span(12);
+	}	
+	
+}
+	
+@include breakpoint($desktop) {
+
+	.content-sidebar-sidebar .content-sidebar-wrap {
+		@include span(8);
+	}
+	
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		@include span(last 8);
+	}
+	
+	/* ### Content */
+	
+	.content {
+		@include span(last 8);
+	}
+	
+	.content-sidebar .content,
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content {
+		@include span(8);
+	}
+	
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content {
+		@include span(5);
+	}
+	
+	/* ### Primary Sidebar */
+	
+	.sidebar-primary {
+		@include span(last 4);
+	}
+	
+	.sidebar-content .sidebar-primary,
+	.sidebar-sidebar-content .sidebar-primary {
+		@include span(4);
+	}
+	
+	/* ### Secondary Sidebar */
+	
+	.sidebar-secondary {
+		@include span(4);
+	}
+	
+	.content-sidebar-sidebar .sidebar-secondary {
+		@include span(last 3);
+	}
+
+}
+
+@include breakpoint($desktop) {
+	.page-template-directory-page-php {
+		.content {
+			@include span(last 9);
+		}
+		&.sidebar-content .sidebar-primary {
+			@include span(3);
+		}				
+	}
+}
+
+/**
+ * Frontpage markup.
+ *
+ */
+
+/* Section Intro
+--------------------------------------------- */
+
+section#l-intro {
+	@include clearfix;
+}
+
+@include breakpoint($tablet) {
+	.m-intro-wrap {
+		@include span(5 of 12);
+	}
+
+	.m-intro-text {
+		@include span(7 at 6 of 12);
+	}
+}
+
+@include breakpoint($desktop) {
+	.m-intro-wrap {
+		@include span(4 of 12);
+	}
+
+	.m-intro-text {
+		@include span(8 at 5 of 12);
+	}
+}
+
+/* Section What Who How 
+--------------------------------------------- */
+
+#l-what-who-how img {
+	width: 100%;
+	height: auto;
+}
+
+@include breakpoint($phone) {
+	@include breakpoint($phone) {
+		#m-what,
+		#m-how,
+		#m-who {
+			@include rem(margin, $general-margin 0);
+		}		
+		#m-who {
+			@include rem(margin, $general-margin (-$general-margin));
+			@include rem(padding, $general-margin);
+		}
+	}	
+}
+
+@include breakpoint($tablet) {
+	section#l-what-who-how {
+		@include clearfix;
+	}
+	#m-what {
+		@include span(6 of 12);
+	}
+	#m-who {
+		@include span(6 at 7 of 12);
+	}
+	#m-how {
+		@include rem(margin, 50px 0 0 0);
+		@include span(12 of 12);
+		img {
+			@include span(6 of 12);
+		}
+		.m-how-wrap {
+			@include span(6 at 7 of 12);
+		}
+	}
+}
+
+@include breakpoint($desktop) {
+	section#l-what-who-how {
+		@include clearfix;
+	}
+
+	#m-what {
+		@include span(4 of 12);
+	}
+	#m-who {
+		@include span(4 at 5 of 12);
+	}
+	#m-how {
+		@include span(4 at 9 of 12);
+	}
+}
+
+/* Section Testimonials
+--------------------------------------------- */
+
+section#l-testimonials {
+	@include clearfix;
+	//@include rem(margin, 0 (-$general-margin) 30px);
+	@include rem(padding, $general-margin);
+}
+
+//body.single-counselor-profile {
+	section#l-testimonials {
+		margin: 0;
+	}
+//}
+
+@include breakpoint($phone) {
+	#l-testimonials {
+		display: none;
+	}
+}
+
+
+/* Section Articles 
+--------------------------------------------- */
+
+#l-articles {
+	@include clearfix;
+}
+
+@include breakpoint($desktop) {
+	#l-articles article {
+		@include span(6 of 12 split);
+	}
+	#l-articles article.last {
+		@include span(6 at 7 of 12 split);
+	}
+}	
+
+.entry-date {
+	@include span(12 of 12);
+	@include clearfix;
+	.entry-date-wrap-left {
+		@include span (5 of 12);
+	}
+	.entry-date-wrap-right {
+		@include span (7 at 6 of 12);
+	}
+}
+
+@include breakpoint($phone) {
+	#l-articles {
+		display: none;
+	}
+}
+
+/* Section Locations 
+--------------------------------------------- */
+
+#l-locations {
+	@include rem(margin, 0 (-$general-margin) 0);
+	@include rem(padding, $general-margin);
+	
+}
+
+#l-locations-inner {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 0 $general-margin;
+}
+
+/* Section Directory 
+--------------------------------------------- */
+
+
+
+/* Footer 
+--------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

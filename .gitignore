@@ -80,15 +80,15 @@ wp-content/*
 #===========================#
 #      Specific Plugins     #
 #===========================#
-# wp-content/plugins/*
-# !wp-content/plugins/my-single-file-plugin.php
-# !wp-content/plugins/my-directory-plugin/
+wp-content/plugins/*
+!wp-content/plugins/arche-utility/
+!wp-content/plugins/th-framework/
 
 #===========================#
 #     Specific Themes       #
 #===========================#
-# wp-content/themes/*
-# !wp-content/themes/my-theme/
+wp-content/themes/*
+!wp-content/themes/arche/
 
 
 

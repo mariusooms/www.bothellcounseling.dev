@@ -1,0 +1,56 @@
+/**
+ * ------------------------------------------------------------------------------------
+ * Theme Settings
+ * ------------------------------------------------------------------------------------
+ */
+
+/* Responiveness */
+$phone: max-width 480px; // max-width
+$notphone: 480px; // min-width
+$tablet: 481px 960px; // min-width max-width
+$mobile: max-width 960px; // max-width
+$desktop: 961px; // min-width
+$max-width: 1280px; // min-width
+
+
+/* Susy global settings */
+$susy: (
+	columns: 12,
+	gutters: 1/2,
+);
+
+/* Typography */
+$base-font-size: 14px;
+$font-1: "Open Sans", "helvetica Neue", Helvetica, Arial, sans-serif;
+$font-2: "Open Sans Condensed", "helvetica Neue", Helvetica, Arial, sans-serif;
+$font-3: "PT Serif", Georgia, serif;
+
+/* Establish a baseline of 20px */
+/* needs to be a pixel value for rem calculation at element level */
+$baseline: $base-font-size * 1.42857;
+
+/* Colors */
+$color-link: #72AE45;
+$color-link-hover: darken($color-link, 10%);
+
+/* Grey scales */
+$color-dark: #2A2A2A;
+$color-medium: #8C8C8C;
+$color-light: #D8D8D8;
+$color-lighter: #F0F0F0;
+$color-barely: #F7F7F7;
+
+$color-hr: #D8D8D8;
+
+/* Bothell garden green */
+$color-1: #72AE45;
+/* Bothell brick red */
+$color-2: #440f01;
+
+$color-validation-error: red;
+$color-validation-success: green;
+
+/* Positioning */
+$margin-multiplier: 1;
+
+$general-margin: $baseline * $margin-multiplier;

@@ -1,0 +1,49 @@
+/**
+ * ------------------------------------------------------------------------------------
+ * Miscelanous Styles
+ * ------------------------------------------------------------------------------------
+ */
+
+ul#search-pagination {
+	@include rem(margin-bottom, $general-margin*2);
+	overflow: hidden;
+	li {
+		float: left;
+		@include rem(margin, 0 3px);
+		background-color: $color-light;
+		@include border-radius(3px);
+		font-family: $font-1;
+		font-weight: 700;
+		&.active {
+			border: 1px solid $color-medium;
+			background-color: #fff;
+		}
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			color: #fff;
+			@include rem(padding, 2px 8px);
+		}
+		&.active a {
+			@include rem(padding, 1px 6px);
+			color: $color-medium;
+			font-weight: 400;
+		}
+	}
+}
+
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.hidden {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}

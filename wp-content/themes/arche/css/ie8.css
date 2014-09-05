@@ -1,0 +1,93 @@
+/**
+ * ------------------------------------------------------------------------------------
+ * IE8 Stylesheet
+ * ------------------------------------------------------------------------------------
+ */
+ 
+/* Layout
+--------------------------------------------- */
+ 
+.m-intro-wrap {
+	width: 31.42857%;
+	float: left;
+	margin-right: 2.85714%;
+}
+
+.m-intro-text {
+	width: 65.71429%;
+	float: right;
+	margin-right: 0;
+}
+
+section#l-what-who-how,
+#l-articles {
+	overflow: hidden;
+}
+
+#m-what {
+	width: 31.42857%;
+	float: left;
+	margin-right: 2.85714%;
+}
+
+#m-who {
+	width: 31.42857%;
+	float: left;
+	margin-right: 2.85714%;
+}
+
+#m-how {
+	width: 31.42857%;
+	float: right;
+	margin-right: 0;
+}
+
+#l-articles article {
+	width: 47.22222%;
+	float: left;
+	margin-left: 1.38889%;
+	margin-right: 1.38889%;
+}
+
+#l-articles article.last {
+	float: right;
+}
+
+/* Display & Sizing
+--------------------------------------------- */
+
+.footer-about-us {
+	display: table;
+}
+.footer-area {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.m-footer-logo {
+	padding: 0 30px;
+	padding: 0 3rem;
+}
+.m-footer-text {
+	padding: 20px 30px 0;
+	padding: 2rem 3rem 0;
+}
+	
+/* Typography
+--------------------------------------------- */
+
+.m-intro-wrap h1 {
+	font-size: 22px;
+	font-size: 2.2rem;
+}
+	
+nav.nav-primary li a .menu-description {
+	font-size: 10px;
+	font-size: 1rem;
+}
+
+#l-testimonials .owl-theme .owl-controls .owl-buttons div,
+#l-locations .owl-theme .owl-controls .owl-buttons div {
+	font-size: 36px;
+	font-size: 3.6rem;
+}

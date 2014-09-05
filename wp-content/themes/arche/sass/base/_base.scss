@@ -1,0 +1,321 @@
+/**
+ * ------------------------------------------------------------------------------------
+ * Base Styles
+ * ------------------------------------------------------------------------------------
+ */
+
+/* Table of Contents
+
+	- HTML5 Reset
+		- Box Sizing
+		- Float Clearing
+	- Defaults
+		- Typographical Elements
+
+*/
+
+/*
+HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+
+/* Box Sizing
+--------------------------------------------- */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Float Clearing
+--------------------------------------------- */
+
+.author-box:before,
+.clearfix:before,
+.entry:before,
+.entry-content:before,
+.footer-widgets:before,
+.pagination:before,
+.site-container:before,
+.site-footer:before,
+.site-header:before,
+.site-inner:before,
+.widget:before,
+.wrap:before {
+	content: " ";
+	display: table;
+}
+
+.author-box:after,
+.clearfix:after,
+.entry:after,
+.entry-content:after,
+.footer-widgets:after,
+.pagination:after,
+.site-container:after,
+.site-footer:after,
+.site-header:after,
+.site-inner:after,
+.widget:after,
+.wrap:after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+/*
+Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/* Typographical Elements
+--------------------------------------------- */
+
+/* $rembase = 10px */
+html {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background-color: #fff;
+	color: $color-dark;
+	font-family: $font-3;
+	@include rem(font-size, $base-font-size);
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
+a,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:         all 0.1s ease-in-out;
+}
+
+::-moz-selection {
+	background-color: #000;
+	color: #fff;
+}
+
+::selection {
+	background-color: #000;
+	color: #fff;
+}
+
+a {
+	color: $color-link;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $color-link-hover;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+p {
+	@include rem(margin, 0 0 20px);
+	padding: 0;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	@include rem(margin, 40px);
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $color-dark;
+	font-family: $font-1;
+	font-weight: 700;
+	@include rem(margin, 0 0 $general-margin);
+}
+
+h1 {
+	@include rem(font-size, 28px);
+}
+
+h2 {
+	@include rem(font-size, 18px);
+}
+
+h3 {
+	@include rem(font-size, 14px);
+}
+
+h4 {
+	font-family: $font-2;
+	@include rem(font-size, 18px);
+}
+
+h5 {
+	@include rem(font-size, 16px);
+	font-weight: 300;
+}
+
+h6 {
+	@include rem(font-size, 14px);
+	font-weight: 300;
+}
+
+footer,
+footer h1,
+footer h2,
+footer p,
+footer a,
+footer a:hover {
+	color: #fff;
+}
+
+footer h1 {
+	font-family: $font-3;
+	@include rem(font-size, 24px);
+	margin: 0;
+}
+
+footer h2 {
+	@include rem(font-size, 12px);
+}
+
+/* ## Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+.featured-content img,
+.gallery img {
+	width: auto;
+}
+
+/* ## Gallery
+--------------------------------------------- */
+
+.gallery {
+	overflow: hidden;
+}
+
+.gallery-item {
+	float: left;
+	margin: 0 0 28px;
+	text-align: center;
+}
+
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	width: 33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	width: 16.6666%;
+}
+
+.gallery-columns-7 .gallery-item {
+	width: 14.2857%;
+}
+
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	width: 11.1111%;
+}
+
+.gallery img {
+	border: 1px solid #ddd;
+	height: auto;
+	padding: 4px;
+}
+
+.gallery img:hover {
+	border: 1px solid #999;
+}
+
+/* Layout
+--------------------------------------------- */
+
+section {
+	@include rem(margin-bottom, 30px);
+}
+
+.site-inner {
+	@include rem(padding, $general-margin $general-margin 0);
+}
+
+aside {
+	@include rem(margin-bottom, 30px);
+	ul {
+		@include rem(margin-bottom, $general-margin);
+	}
+}

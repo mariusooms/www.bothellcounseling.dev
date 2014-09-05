@@ -1,0 +1,35 @@
+/**
+ * ------------------------------------------------------------------------------------
+ * Footer Layout
+ * ------------------------------------------------------------------------------------
+ */
+
+footer {
+	@include span(12 of 12);
+}
+
+.footer-widgets,
+.footer-about-us,
+.copyright .inner {
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+.copyright {
+	@include clearfix;
+}
+
+footer section {
+	margin: 0;
+	padding: 0;
+}
+
+@include breakpoint($notphone) {
+	.footer-about-us {
+		display: table;
+	}
+	.footer-area {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}

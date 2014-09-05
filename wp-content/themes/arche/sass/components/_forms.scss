@@ -1,0 +1,29 @@
+/**
+ * ------------------------------------------------------------------------------------
+ * Form Styles
+ * ------------------------------------------------------------------------------------
+ */
+
+textarea, 
+input { 
+	outline: none; 
+	box-shadow: none;
+}
+	 
+input {
+	@include rem(margin, 0 0 $general-margin 0);
+	@include rem(padding, $general-margin/2 );
+	font-family: $font-1;
+	border: 1px solid $color-light;
+	&:focus {
+		//border: 1px solid $color-medium;
+		background-color: #f3fbfd;
+		@include box-shadow(inset 2px 2px 1px #fff, inset -2px -2px 1px #fff);
+	}
+	&[type="search"] {
+		width: 80%;
+	}
+	&[type="submit"] {
+		width: 20%;
+	}
+}
