@@ -746,6 +746,10 @@ ul#counselor-forms {
 			@include rem(margin-right, 20px);
 			.counselor-image {
 				min-width: 158px;
+				img {
+					width: 150px;
+					height: auto;
+				}
 			}			
 		}
 		.counselor-wrap {

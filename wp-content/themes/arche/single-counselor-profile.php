@@ -13,7 +13,8 @@ function arche_the_profile_page_main() { ?>
 		<div id="counselor-single">
 			<div class="counselor-list-cell">
 				<div class="counselor-image">
-					<img src="http://comm-imac.local:5757/wp-content/uploads/2014/09/Carolyn-profile-150x225.jpg" data-portrait="http://comm-imac.local:5757/wp-content/uploads/2014/09/Carolyn-profile-270x405.jpg" data-landscape-small="http://comm-imac.local:5757/wp-content/uploads/2014/09/Carolyn-profile-267x150.jpg" alt="Photo of Carolyn Peterson">			
+					<!-- <img src="http://comm-imac.local:5757/wp-content/uploads/2014/09/Carolyn-profile-150x225.jpg" data-hi-res="http://comm-imac.local:5757/wp-content/uploads/2014/09/Carolyn-profile-270x405.jpg" data-lo-res="http://comm-imac.local:5757/wp-content/uploads/2014/09/Carolyn-profile-150x225.jpg" alt="Photo of Carolyn Peterson"> -->
+					<img src="http://comm-imac.local:5757/wp-content/uploads/2014/09/Carolyn-profile-270x405.jpg" alt="Photo of Carolyn Peterson">			
 				</div>
 			</div><!-- .counselor-list-cell -->
 			<div class="counselor-wrap">

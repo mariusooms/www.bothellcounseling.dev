@@ -5249,27 +5249,32 @@ ul#counselor-forms li {
   #counselor-single .counselor-list-cell .counselor-image {
     min-width: 158px;
   }
-  /* line 751, sass/modules/_main.scss */
+  /* line 749, sass/modules/_main.scss */
+  #counselor-single .counselor-list-cell .counselor-image img {
+    width: 150px;
+    height: auto;
+  }
+  /* line 755, sass/modules/_main.scss */
   #counselor-single .counselor-wrap {
     display: block;
     padding-left: 0;
   }
-  /* line 754, sass/modules/_main.scss */
+  /* line 758, sass/modules/_main.scss */
   #counselor-single .counselor-wrap .counselor-details,
   #counselor-single .counselor-wrap .schedule {
     float: none;
   }
-  /* line 758, sass/modules/_main.scss */
+  /* line 762, sass/modules/_main.scss */
   #counselor-single .counselor-wrap .schedule {
     float: none;
     margin-top: 20px;
     margin-top: 2rem;
   }
-  /* line 761, sass/modules/_main.scss */
+  /* line 765, sass/modules/_main.scss */
   #counselor-single .counselor-wrap .schedule .badge {
     display: inline-block;
   }
-  /* line 765, sass/modules/_main.scss */
+  /* line 769, sass/modules/_main.scss */
   #counselor-single .counselor-wrap .short-bio,
   #counselor-single .counselor-wrap hr,
   #counselor-single .counselor-wrap .availability {
@@ -5278,30 +5283,30 @@ ul#counselor-forms li {
   }
 }
 @media (max-width: 480px) {
-  /* line 776, sass/modules/_main.scss */
+  /* line 780, sass/modules/_main.scss */
   #counselor-single {
     margin-bottom: 40px;
     margin-bottom: 4rem;
   }
-  /* line 778, sass/modules/_main.scss */
+  /* line 782, sass/modules/_main.scss */
   #counselor-single .counselor-wrap {
     clear: left;
     padding-top: 20px;
     padding-top: 2rem;
   }
 
-  /* line 784, sass/modules/_main.scss */
+  /* line 788, sass/modules/_main.scss */
   #profile-navigiation .nav-tabs {
     border-top: 1px solid #d8d8d8;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 787, sass/modules/_main.scss */
+  /* line 791, sass/modules/_main.scss */
   #profile-navigiation .nav-tabs li {
     width: 100%;
     float: left;
   }
-  /* line 790, sass/modules/_main.scss */
+  /* line 794, sass/modules/_main.scss */
   #profile-navigiation .nav-tabs li.active {
     border: none;
     border-bottom: 1px solid #d8d8d8;
@@ -5314,26 +5319,26 @@ ul#counselor-forms li {
 }
 /* Search Results
 --------------------------------------------- */
-/* line 805, sass/modules/_main.scss */
+/* line 809, sass/modules/_main.scss */
 #l-directory-options {
   margin: 19.99998px 0;
   margin: 2.0rem 0;
 }
-/* line 808, sass/modules/_main.scss */
+/* line 812, sass/modules/_main.scss */
 #l-directory-options input {
   width: 100%;
 }
-/* line 811, sass/modules/_main.scss */
+/* line 815, sass/modules/_main.scss */
 #l-directory-options ul {
   overflow: hidden;
 }
-/* line 813, sass/modules/_main.scss */
+/* line 817, sass/modules/_main.scss */
 #l-directory-options ul li {
   float: left;
   min-width: 210px;
 }
 
-/* line 820, sass/modules/_main.scss */
+/* line 824, sass/modules/_main.scss */
 .search-message {
   margin: 9.99999px 0 19.99998px;
   margin: 1.0rem 0 2.0rem;
@@ -5344,7 +5349,7 @@ ul#counselor-forms li {
   clear: both;
   overflow: hidden;
 }
-/* line 829, sass/modules/_main.scss */
+/* line 833, sass/modules/_main.scss */
 .search-message p {
   margin: 0;
   padding: 0;
@@ -5352,38 +5357,38 @@ ul#counselor-forms li {
   padding: 9.99999px;
   padding: 1.0rem;
 }
-/* line 836, sass/modules/_main.scss */
+/* line 840, sass/modules/_main.scss */
 .search-message ul.layout-switch {
   float: right;
   padding: 9.99999px;
   padding: 1.0rem;
 }
-/* line 839, sass/modules/_main.scss */
+/* line 843, sass/modules/_main.scss */
 .search-message ul.layout-switch li {
   margin: 0 0 0 9.99999px;
   margin: 0 0 0 1.0rem;
   float: left;
 }
-/* line 842, sass/modules/_main.scss */
+/* line 846, sass/modules/_main.scss */
 .search-message ul.layout-switch li i {
   display: block;
   width: 100%;
   height: 100%;
   color: #8c8c8c;
 }
-/* line 849, sass/modules/_main.scss */
+/* line 853, sass/modules/_main.scss */
 .search-message ul.layout-switch li i:hover, .search-message ul.layout-switch li.active i {
   color: #2a2a2a;
 }
 
-/* line 855, sass/modules/_main.scss */
+/* line 859, sass/modules/_main.scss */
 .search-results {
   width: 100%;
   clear: both;
   overflow: hidden;
 }
 
-/* line 863, sass/modules/_main.scss */
+/* line 867, sass/modules/_main.scss */
 .list-view .search-results > li {
   padding: 19.99998px;
   padding: 2.0rem;
@@ -5392,28 +5397,28 @@ ul#counselor-forms li {
   border-radius: 8px;
   background-color: #f7f7f7;
 }
-/* line 867, sass/modules/_main.scss */
+/* line 871, sass/modules/_main.scss */
 .list-view .search-results > li .layout {
   display: table;
 }
-/* line 870, sass/modules/_main.scss */
+/* line 874, sass/modules/_main.scss */
 .list-view .search-results > li .layout .counselor-image.list {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   min-width: 150px;
 }
-/* line 873, sass/modules/_main.scss */
+/* line 877, sass/modules/_main.scss */
 .list-view .search-results > li .layout .counselor-image.list .counselor-overlay {
   -moz-border-radius: 0 0 3px 3px;
   -webkit-border-radius: 0;
   border-radius: 0 0 3px 3px;
 }
-/* line 877, sass/modules/_main.scss */
+/* line 881, sass/modules/_main.scss */
 .list-view .search-results > li .layout .counselor-image.grid {
   display: none;
 }
-/* line 882, sass/modules/_main.scss */
+/* line 886, sass/modules/_main.scss */
 .list-view .search-results > li .layout .counselor-wrap .short-bio {
   margin: 30px 0 0 0;
   margin: 3rem 0 0 0;
@@ -5424,17 +5429,17 @@ ul#counselor-forms li {
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 888, sass/modules/_main.scss */
+/* line 892, sass/modules/_main.scss */
 .list-view .search-results > li .layout .counselor-wrap a.more {
   display: inline-block;
   margin-left: 5px;
   margin-left: 0.5rem;
 }
-/* line 892, sass/modules/_main.scss */
+/* line 896, sass/modules/_main.scss */
 .list-view .search-results > li .layout .counselor-wrap .contact strong {
   display: none;
 }
-/* line 895, sass/modules/_main.scss */
+/* line 899, sass/modules/_main.scss */
 .list-view .search-results > li .layout .counselor-wrap .counselor-location {
   display: none;
 }
@@ -5523,18 +5528,18 @@ ul#counselor-forms li {
 /* Search Results - based on media queries.
 --------------------------------------------- */
 @media (max-width: 380px) {
-  /* line 990, sass/modules/_main.scss */
+  /* line 994, sass/modules/_main.scss */
   .counselor-list-cell {
     display: none;
   }
 
-  /* line 993, sass/modules/_main.scss */
+  /* line 997, sass/modules/_main.scss */
   .counselor-wrap {
     padding: 0 !important;
   }
 }
 @media (max-width: 580px) {
-  /* line 999, sass/modules/_main.scss */
+  /* line 1003, sass/modules/_main.scss */
   #search-results {
     /*
     		&.grid-view {
@@ -5546,44 +5551,44 @@ ul#counselor-forms li {
     		}
     */
   }
-  /* line 1010, sass/modules/_main.scss */
+  /* line 1014, sass/modules/_main.scss */
   #search-results .search-message p {
     margin-bottom: 20px;
     margin-bottom: 2rem;
     padding: 0;
   }
-  /* line 1017, sass/modules/_main.scss */
+  /* line 1021, sass/modules/_main.scss */
   #search-results.list-view .search-results > li {
     padding: 0;
     border-radius: 0;
     background-color: transparent;
   }
-  /* line 1021, sass/modules/_main.scss */
+  /* line 1025, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-image {
     min-width: 60px;
     max-width: 60px;
     border: none;
     border-radius: 0;
   }
-  /* line 1026, sass/modules/_main.scss */
+  /* line 1030, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-image .counselor-overlay, #search-results.list-view .search-results > li .counselor-image .counselor-location {
     display: none;
   }
-  /* line 1030, sass/modules/_main.scss */
+  /* line 1034, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-wrap {
     padding: 0 0 0 15px;
     padding: 0 0 0 1.5rem;
   }
-  /* line 1032, sass/modules/_main.scss */
+  /* line 1036, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-wrap .counselor-details {
     float: none;
   }
-  /* line 1034, sass/modules/_main.scss */
+  /* line 1038, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-wrap .counselor-details .contact {
     font-size: 13px;
     font-size: 1.3rem;
   }
-  /* line 1037, sass/modules/_main.scss */
+  /* line 1041, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-wrap .counselor-details .counselor-location {
     display: block;
     color: #2a2a2a;
@@ -5593,18 +5598,18 @@ ul#counselor-forms li {
     font-size: 13px;
     font-size: 1.3rem;
   }
-  /* line 1046, sass/modules/_main.scss */
+  /* line 1050, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-wrap .schedule {
     float: none;
     margin-top: 4px;
     margin-top: 0.4rem;
   }
-  /* line 1049, sass/modules/_main.scss */
+  /* line 1053, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-wrap .schedule .button {
     margin-right: 5px;
     margin-right: 0.5rem;
   }
-  /* line 1052, sass/modules/_main.scss */
+  /* line 1056, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-wrap .schedule .button,
   #search-results.list-view .search-results > li .counselor-wrap .schedule .badge {
     display: inline-block;
@@ -5614,7 +5619,7 @@ ul#counselor-forms li {
     padding: 0.5rem;
     width: auto;
   }
-  /* line 1060, sass/modules/_main.scss */
+  /* line 1064, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-wrap .jobdescription,
   #search-results.list-view .search-results > li .counselor-wrap .short-bio,
   #search-results.list-view .search-results > li .counselor-wrap hr,
@@ -5623,27 +5628,27 @@ ul#counselor-forms li {
   }
 }
 @media (min-width: 581px) and (max-width: 719px) {
-  /* line 1078, sass/modules/_main.scss */
+  /* line 1082, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .counselor-details {
     float: none;
   }
-  /* line 1081, sass/modules/_main.scss */
+  /* line 1085, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .schedule {
     float: none;
     margin-top: 10px;
     margin-top: 1rem;
   }
-  /* line 1084, sass/modules/_main.scss */
+  /* line 1088, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .schedule .button {
     margin-right: 5px;
     margin-right: 0.5rem;
   }
-  /* line 1087, sass/modules/_main.scss */
+  /* line 1091, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .schedule .button {
     padding: 5px 13px;
     padding: 0.5rem 1.3rem;
   }
-  /* line 1090, sass/modules/_main.scss */
+  /* line 1094, sass/modules/_main.scss */
   #search-results.list-view .search-results > li .schedule .button,
   #search-results.list-view .search-results > li .schedule .badge {
     display: inline-block;
@@ -5653,7 +5658,7 @@ ul#counselor-forms li {
 /* Aside
 --------------------------------------------- */
 @media (max-width: 480px) {
-  /* line 1106, sass/modules/_main.scss */
+  /* line 1110, sass/modules/_main.scss */
   aside {
     margin-bottom: 0;
   }
