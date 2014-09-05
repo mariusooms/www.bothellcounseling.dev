@@ -81,6 +81,7 @@ wp-content/*
 #      Specific Plugins     #
 #===========================#
 wp-content/plugins/*
+!wp-content/plugins/arche-utility
 !wp-content/plugins/arche-utility/
 !wp-content/plugins/th-framework/
 
