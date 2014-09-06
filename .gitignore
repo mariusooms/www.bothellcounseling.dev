@@ -2,7 +2,7 @@
 ##                                                                            #
 ##       GIT IGNORE FOR WORDPRESS SITES                                       #
 ##       ------------------------------                                       #
-##       By: BigWilliam <hello@bigwilliam.com>                                #
+##                                                                            #
 ##       License: MIT - aka you can use/modify this how you want :)           #
 ##                                                                            #
 ###############################################################################
@@ -45,34 +45,18 @@ access_log
 #===================================#
 #       Config. and npm Files       #
 #===================================#
-local-config.php
+config/*
 # wp-config.php
 node_modules
 
 
-
-## Main Stuff ##
-
-#===================================#
-#     WP Core, except content       #
-#===================================#
-/*
-!.gitignore
-!wp-content/
-# !media/
-!favicon.ico
-!favicon.png
-!robots.txt
-!humans.txt
-
 #=============================================#
-#     wp-content, except plugins and themes   #
+#    wp-content, except plugins and themes    #
 #=============================================#
 wp-content/*
 !wp-content/plugins/
-!wp-content/mu-plugins/
 !wp-content/themes/
-# !wp-content/uploads ##=> It's a good idea to ignore uploads, especially if you are using git to deploy to live/dev environments. Un-comment this line to 'watch' uploads
+# !wp-content/uploads 
 
 
 ## Use these to get more specific ##
@@ -81,27 +65,21 @@ wp-content/*
 #      Specific Plugins     #
 #===========================#
 wp-content/plugins/*
-!wp-content/plugins/arche-utility
 !wp-content/plugins/arche-utility/
-!wp-content/plugins/th-framework
 !wp-content/plugins/th-framework/
 
 #===========================#
 #     Specific Themes       #
 #===========================#
 wp-content/themes/*
-!wp-content/themes/arche
+!wp-content/themes/twentyfourteen/
+!wp-content/themes/genesis/
 !wp-content/themes/arche/
 
 
-
-
-## Depreciated stuff, keeping here for reference ##
-
-##### design files #####
-# *.psd
-
-##### CACHE #####
+#===========================#
+#          Cache            #
+#===========================#
 # wp-content/cache/
 # wp-content/advanced-cache.php
 # wp-content/wp-cache-config.php
