@@ -7,3 +7,6 @@
 [submodule "wp"]
 	path = wp
 	url = https://mariusooms@github.com/WordPress/WordPress.git
+[submodule "content/themes/arche"]
+	path = content/themes/arche
+	url = https://mariusooms@github.com/sccmain/arche.git
