@@ -4,9 +4,6 @@
 [submodule "content/plugins/th-framework"]
 	path = content/plugins/th-framework
 	url = https://marius%40ywam.nl@github.com/thuijssoon/th-framework.git
-[submodule "content/themes/arche"]
-	path = content/themes/arche
-	url = https://marius%40ywam.nl@github.com/sccmain/arche.git
 [submodule "wp"]
 	path = wp
 	url = https://mariusooms@github.com/WordPress/WordPress.git
