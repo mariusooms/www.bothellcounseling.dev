@@ -43,14 +43,14 @@ access_log
 
 
 #===================================#
-#       Config. and npm Files       #
+#     Config. and Worpress Core     #
 #===================================#
 # config/*
 config/enviroments/local-config.php
 config/enviroments/stable-config.php
 config/enviroments/production-config.php
 # wp-config.php
-node_modules
+.htaccess
 
 
 #=============================================#
@@ -67,17 +67,17 @@ content/*
 #===========================#
 #      Specific Plugins     #
 #===========================#
-content/plugins/*
-!content/plugins/arche-utility/
-!content/plugins/th-framework/
+# content/plugins/*
+content/plugins/genesis-visual-hook-guide
+# !content/plugins/arche-utility/
+# !content/plugins/th-framework/
 
 #===========================#
 #     Specific Themes       #
 #===========================#
-content/themes/*
-!content/themes/twentyfourteen/
-!content/themes/genesis/
-!content/themes/arche/
+# content/themes/*
+# !content/themes/genesis/
+# !content/themes/arche/
 
 
 #===========================#
