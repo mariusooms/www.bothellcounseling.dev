@@ -10,3 +10,6 @@
 [submodule "content/themes/arche"]
 	path = content/themes/arche
 	url = https://mariusooms@github.com/sccmain/arche.git
+[submodule "content/themes/genesis"]
+	path = content/themes/genesis
+	url = https://mariusooms@github.com/sccmain/genesis.git
