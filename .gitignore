@@ -51,7 +51,7 @@ config/enviroments/stable-config.php
 config/enviroments/production-config.php
 # wp-config.php
 .htaccess
-
+wp/.htaccess
 
 #=============================================#
 #    wp-content, except plugins and themes    #
