@@ -13,3 +13,6 @@
 [submodule "content/themes/genesis"]
 	path = content/themes/genesis
 	url = https://mariusooms@github.com/sccmain/genesis.git
+[submodule "content/plugins/wp-migrate-db-pro"]
+	path = content/plugins/wp-migrate-db-pro
+	url = https://mariusooms@github.com/sccmain/wp-migrate-db-pro.git
