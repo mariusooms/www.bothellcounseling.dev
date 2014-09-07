@@ -46,6 +46,9 @@ access_log
 #       Config. and npm Files       #
 #===================================#
 # config/*
+config/enviroments/local-config.php
+config/enviroments/stable-config.php
+config/enviroments/production-config.php
 # wp-config.php
 node_modules
 
