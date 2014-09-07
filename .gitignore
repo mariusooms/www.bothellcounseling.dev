@@ -69,15 +69,17 @@ content/*
 #===========================#
 # content/plugins/*
 content/plugins/genesis-visual-hook-guide
-# !content/plugins/arche-utility/
-# !content/plugins/th-framework/
+content/plugins/wp-migrate-db-pro
+content/plugins/wp-migrate-db-pro-media-files
+# !content/plugins/arche-utility
+# !content/plugins/th-framework
 
 #===========================#
 #     Specific Themes       #
 #===========================#
 # content/themes/*
-# !content/themes/genesis/
-# !content/themes/arche/
+# !content/themes/genesis
+# !content/themes/arche
 
 
 #===========================#
