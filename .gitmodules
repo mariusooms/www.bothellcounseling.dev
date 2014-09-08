@@ -1,9 +1,3 @@
-[submodule "content/plugins/th-framework"]
-	path = content/plugins/th-framework
-	url = https://mariusooms@github.com/thuijssoon/th-framework.git
-[submodule "wp"]
-	path = wp
-	url = https://mariusooms@github.com/WordPress/WordPress.git
 [submodule "content/plugins/arche-utility"]
 	path = content/plugins/arche-utility
 	url = git@github.com:sccmain/arche-utility.git
