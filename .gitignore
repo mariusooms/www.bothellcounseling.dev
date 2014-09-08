@@ -74,9 +74,9 @@ content/plugins/wp-migrate-db-pro-media-files
 #===========================#
 #     Specific Themes       #
 #===========================#
-# content/themes/*
-# !content/themes/genesis
-# !content/themes/arche
+content/themes/*
+!content/themes/genesis
+!content/themes/arche
 
 
 #===========================#
