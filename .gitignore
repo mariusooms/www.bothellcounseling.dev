@@ -45,10 +45,8 @@ access_log
 #===================================#
 #     Config. and Worpress Core     #
 #===================================#
-# config/*
-config/enviroments/local-config.php
-config/enviroments/stable-config.php
-config/enviroments/production-config.php
+config/enviroments/*
+!config/enviroments/enviroment-config-sample.php
 # wp-config.php
 .htaccess
 wp/.htaccess
