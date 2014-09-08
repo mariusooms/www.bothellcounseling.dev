@@ -1,6 +1,3 @@
-[submodule "content/plugins/arche-utility"]
-	path = content/plugins/arche-utility
-	url = https://mariusooms@github.com/sccmain/arche-utility.git
 [submodule "content/plugins/th-framework"]
 	path = content/plugins/th-framework
 	url = https://mariusooms@github.com/thuijssoon/th-framework.git
@@ -16,3 +13,6 @@
 [submodule "content/plugins/wp-migrate-db-pro"]
 	path = content/plugins/wp-migrate-db-pro
 	url = https://mariusooms@github.com/sccmain/wp-migrate-db-pro.git
+[submodule "content/plugins/arche-utility"]
+	path = content/plugins/arche-utility
+	url = git@github.com:sccmain/arche-utility.git
