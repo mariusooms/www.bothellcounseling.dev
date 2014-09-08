@@ -10,3 +10,9 @@
 [submodule "content/plugins/wp-migrate-db-pro"]
 	path = content/plugins/wp-migrate-db-pro
 	url = git@github.com:sccmain/wp-migrate-db-pro.git
+[submodule "content/plugins/th-framework"]
+	path = content/plugins/th-framework
+	url = git@github.com:thuijssoon/th-framework.git
+[submodule "wp"]
+	path = wp
+	url = git@github.com:WordPress/WordPress.git
