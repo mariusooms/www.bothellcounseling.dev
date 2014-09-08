@@ -4,15 +4,6 @@
 [submodule "wp"]
 	path = wp
 	url = https://mariusooms@github.com/WordPress/WordPress.git
-[submodule "content/themes/arche"]
-	path = content/themes/arche
-	url = https://mariusooms@github.com/sccmain/arche.git
-[submodule "content/themes/genesis"]
-	path = content/themes/genesis
-	url = https://mariusooms@github.com/sccmain/genesis.git
-[submodule "content/plugins/wp-migrate-db-pro"]
-	path = content/plugins/wp-migrate-db-pro
-	url = https://mariusooms@github.com/sccmain/wp-migrate-db-pro.git
 [submodule "content/plugins/arche-utility"]
 	path = content/plugins/arche-utility
 	url = git@github.com:sccmain/arche-utility.git
