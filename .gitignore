@@ -69,6 +69,8 @@ content/*
 content/plugins/genesis-visual-hook-guide
 content/plugins/wp-migrate-db-pro-media-files
 content/plugins/tweeple
+content/plugins/menu-image
+content/plugins/menu-rename
 
 #===========================#
 #     Specific Themes       #

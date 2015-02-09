@@ -14,7 +14,7 @@ function wr2x_settings_page() {
     jordy_meow_donation(true);
 	$method = wr2x_getoption( "method", "wr2x_advanced", 'retina.js' );
 
-	echo "<div id='icon-options-general' class='icon32'><br></div><h2>WP Retina 2x";
+	echo "<div id='icon-options-general' class='icon32'><br></div><h2>Retina";
     by_jordy_meow();
     echo "</h2>";
 	if ( $method == 'retina.js' ) {
@@ -96,7 +96,7 @@ function wr2x_admin_init() {
                 'label' => __( 'Auto Generate', 'wp-retina-2x' ),
                 'desc' => __( 'Generate Retina images automatically when images are uploaded to the Media Library.', 'wp-retina-2x' ),
                 'type' => 'checkbox',
-                'default' => false
+                'default' => true
             )
         ),
 		'wr2x_advanced' => array(
@@ -111,7 +111,7 @@ function wr2x_admin_init() {
                         The <b>Retina-Images method</b> uses a server handler: the images will be loaded through the <a href="https://github.com/Retina-Images/Retina-Images/">Retina-Images</a> PHP handler. Your .htaccess will be modified automatically. It might be too difficult to set-up if it does not work right away.<br /><br />
                 	', 'wp-retina-2x' ),
                 'type' => 'radio',
-                'default' => 'retina.js',
+                'default' => 'Picturefill',
                 'options' => array(
                     'Picturefill' => __( "Picturefill", 'wp-retina-2x' ),
                     'HTML Rewrite' => __( "IMG Rewrite", 'wp-retina-2x' ),
