@@ -65,15 +65,12 @@ content/*
 #===========================#
 #      Specific Plugins     #
 #===========================#
-# content/plugins/*
-content/plugins/genesis-visual-hook-guide
-content/plugins/wp-migrate-db-pro-media-files
-content/plugins/tweeple
-content/plugins/menu-image
-content/plugins/ajax-search-lite
-content/plugins/yet-another-related-posts-plugin
-content/plugins/wp-retina-2x
-content/plugins/admin-post-navigation
+content/plugins/*
+!content/plugins/arche-utility
+!content/plugins/th-framework
+!content/plugins/gravityforms
+!content/plugins/wp-migrate-db-pro
+
 
 #===========================#
 #     Specific Themes       #
