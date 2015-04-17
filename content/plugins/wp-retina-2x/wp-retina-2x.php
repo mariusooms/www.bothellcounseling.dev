@@ -3,7 +3,7 @@
 Plugin Name: WP Retina 2x
 Plugin URI: http://www.meow.fr
 Description: Make your images crisp and beautiful on Retina (High-DPI) displays.
-Version: 3.2.7
+Version: 3.3.0
 Author: Jordy Meow
 Author URI: http://www.meow.fr
 
@@ -24,7 +24,7 @@ Originally developed for two of my websites:
  *
  */
 
-$wr2x_version = '3.2.7';
+$wr2x_version = '3.3.0';
 $wr2x_retinajs = '1.3.0';
 $wr2x_picturefill = '2.2.0.2014.02.03';
 $wr2x_lazysizes = '1.0.1';
@@ -132,13 +132,13 @@ function wr2x_picture_rewrite( $buffer ) {
 		}
 		else {
 			$img_pathinfo = wr2x_get_pathinfo_from_image_src( $element->src );
-			$filepath = trailingslashit( ABSPATH ) . $img_pathinfo;
+			$filepath = trailingslashit( wr2x_get_upload_root() ) . $img_pathinfo;
 			$potential_retina = wr2x_get_retina( $filepath );
 			$from = substr( $element, 0 );
 			if ( $potential_retina != null ) {
 				$retina_url = wr2x_cdn_this( wr2x_from_system_to_url( $potential_retina ) );
 				$retina_url = apply_filters( 'wr2x_img_retina_url', $retina_url );
-				$img_url = wr2x_cdn_this( site_url( $img_pathinfo ) );
+				$img_url = wr2x_cdn_this( trailingslashit( wr2x_get_upload_root_url() ) . $img_pathinfo );
 				$img_url  = apply_filters( 'wr2x_img_url', $img_url  );
 				if ( $lazysize ) {
 					$element->class = $element->class . ' lazyload';
@@ -193,10 +193,10 @@ function wr2x_html_rewrite( $buffer ) {
 	foreach ( $imageTags as $tag ) {
 		$nodes_count++;
 		$img_pathinfo = wr2x_get_pathinfo_from_image_src( $tag->getAttribute('src') );
-		$filepath = trailingslashit( ABSPATH ) . $img_pathinfo;
+		$filepath = trailingslashit( wr2x_get_upload_root() ) . $img_pathinfo;
 		$potential_retina = wr2x_get_retina( $filepath );
 		if ( $potential_retina != null ) {
-			$retina_pathinfo = wr2x_cdn_this( ltrim( str_replace( ABSPATH, "", $potential_retina ), '/' ) );
+			$retina_pathinfo = wr2x_cdn_this( ltrim( str_replace( wr2x_get_upload_root(), "", $potential_retina ), '/' ) );
 			$buffer = str_replace( $img_pathinfo, $retina_pathinfo, $buffer );
 			wr2x_log( "The img src '$img_pathinfo' was replaced by '$retina_pathinfo'" );
 			$nodes_replaced++;
@@ -217,10 +217,13 @@ function wr2x_html_rewrite( $buffer ) {
 
 // Function written by jappievw
 // http://wordpress.org/support/topic/cant-find-retina-file-with-custom-uploads-constant?replies=3#post-5078892
-function wr2x_get_pathinfo_from_image_src($image_src) {
-	$site_url = trailingslashit( site_url() );
-	if ( strpos( $image_src, $site_url ) === 0 ) {
-		return substr( $image_src, strlen( $site_url ) );
+function wr2x_get_pathinfo_from_image_src( $image_src ) {
+	$uploads_url = trailingslashit( wr2x_get_upload_root_url() );
+	if ( strpos( $image_src, $uploads_url ) === 0 ) {
+		return ltrim( substr( $image_src, strlen( $uploads_url ) ), '/');
+	}
+	else if ( strpos( $image_src, wp_make_link_relative( $uploads_url ) ) === 0 ) {
+		return ltrim( substr( $image_src, strlen( wp_make_link_relative( $uploads_url ) ) ), '/');
 	}
 	else {
 		$img_info = parse_url( $image_src );
@@ -516,6 +519,25 @@ function wpr2x_html_get_details_retina_info( $post, $retina_info ) {
  *
  */
 
+// Get WordPress upload directory
+function wr2x_get_upload_root()
+{
+	$uploads = wp_upload_dir();
+	return $uploads['basedir'];
+}
+
+function wr2x_get_upload_root_url()
+{
+	$uploads = wp_upload_dir();
+	return $uploads['baseurl'];
+}
+
+// Get WordPress directory
+function wr2x_get_wordpress_root()
+{
+	return ABSPATH;
+}
+
 // Rename this filename with CDN
 function wr2x_cdn_this( $file ) {
 	$domain = "";
@@ -532,8 +554,8 @@ function wr2x_cdn_this( $file ) {
 function wr2x_from_system_to_url( $file ) {
 	if ( empty( $file ) )
 		return "";
-	$retina_pathinfo = ltrim( str_replace( ABSPATH, "", $file ), '/' );
-	$url = trailingslashit( get_site_url() ) . $retina_pathinfo;
+	$retina_pathinfo = ltrim( str_replace( wr2x_get_upload_root(), "", $file ), '/' );
+	$url = trailingslashit( wr2x_get_upload_root_url() ) . $retina_pathinfo;
 	$url = wr2x_cdn_this( $url );
 	return $url;
 }
@@ -610,19 +632,19 @@ function wr2x_log( $data ) {
 
 // Based on http://wordpress.stackexchange.com/questions/6645/turn-a-url-into-an-attachment-post-id
 function wr2x_get_attachment_id( $file ) {
-    $query = array(
-        'post_type' => 'attachment',
+	$query = array(
+		'post_type' => 'attachment',
 		'meta_query' => array(
 			array(
 				'key'		=> '_wp_attached_file',
 				'value'		=> ltrim( $file, '/' )
 			)
 		)
-    );
-    $posts = get_posts( $query );
-    foreach( $posts as $post )
+	);
+	$posts = get_posts( $query );
+	foreach( $posts as $post )
 		return $post->ID;
-    return false;
+	return false;
 }
 
 // Return the retina extension followed by a dot
@@ -633,7 +655,7 @@ function wr2x_retina_extension() {
 // Return the retina file if there is any
 function wr2x_get_retina( $file ) {
 	$pathinfo = pathinfo( $file ) ;
-	$retina_file = trailingslashit( $pathinfo['dirname'] ) . $pathinfo['filename'] . wr2x_retina_extension() . $pathinfo['extension'];
+	$retina_file = trailingslashit( $pathinfo['dirname'] ) . $pathinfo['filename'] . wr2x_retina_extension() . ( isset( $pathinfo['extension'] ) ? $pathinfo['extension'] : "" );
 	if ( file_exists( $retina_file ) ) {
 		return $retina_file;
 	}
@@ -890,8 +912,8 @@ function wr2x_validate_pro( $subscr_id ) {
 		set_transient( 'wr2x_validated', false, 0 );
 		return false;
 	}
-	require_once ABSPATH . WPINC . '/class-IXR.php';
-	require_once ABSPATH . WPINC . '/class-wp-http-ixr-client.php';
+	require_once wr2x_get_wordpress_root() . WPINC . '/class-IXR.php';
+	require_once wr2x_get_wordpress_root() . WPINC . '/class-wp-http-ixr-client.php';
 	$client = new WP_HTTP_IXR_Client( 'http://apps.meow.fr/xmlrpc.php' );
 	if ( !$client->query( 'meow_sales.auth', $subscr_id, 'retina', get_site_url() ) ) { 
 		update_option( 'wr2x_pro_serial', "" );
