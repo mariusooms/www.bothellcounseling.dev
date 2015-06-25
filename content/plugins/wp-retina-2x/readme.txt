@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: retina, images, image, admin, attachment, media, files, iphone, ipad, plugin, picture, pictures
 License: GPLv2 or later
 Requires at least: 3.5
-Tested up to: 4.1.1
-Stable tag: 3.3.0
+Tested up to: 4.2.2
+Stable tag: 3.3.8
 
 Make your website look beautiful and crisp on Retina / High DPI displays.
 
@@ -26,6 +26,32 @@ Languages: English, French.
 3. Check if it works! - if it doesn't, read the FAQ, the tutorial, and check the forums.
 
 == Changelog ==
+
+= 3.3.8 =
+* Fix: There was an issue if the class starts with a space (broken HTML), plugin automatically fix it on the fly.
+* Fix: Full-Size image had the wrong path in the Details screen.
+* Fix: Option Auto Generate was wrongly show unchecked even though it is active by default.
+* Update: Moved the filters to allow developers to use files hosted on another server.
+* Update: Translation strings. If you want to translate the plugin in your language, please contact me :)
+* Info: I released a new plugin called WP Map Editor. You can get it here https://wordpress.org/plugins/wp-mapeditor/ and learn about it here http://apps.meow.fr/wp-mapeditor/. I am welcoming a few beta-testers :)
+
+= 3.3.6 =
+* Fix: There was an issue with local path for a few installs.
+* Add: Introduced $wr2x_extra_debug for extra developer debug (might be handy).
+
+= 3.3.5 =
+Fix: Very minor issue (one of the debug line had a bug).
+
+= 3.3.4 =
+* Fix: Issues with retina images outside the uploads directory.
+* Info: Please write a review for the plugin if you are happy with it. I am trying my best to make this plugin to work with every kind of WP install and system :)
+
+= 3.3.2 =
+* Fix: Use WP uploads folder for temporary files to avoid issues depending on hosting services.
+
+= 3.3.1 =
+* Update: LazySize from 1.0 to 1.1.
+* Update: PictureFill from 2.3.0 to 2.3.1.
 
 = 3.3.0 =
 * Fix: Used a PHP shortcut that only works in PHP 5.4. Shortcut removed.
@@ -289,9 +315,13 @@ Quick and easy installation:
 
 == Frequently Asked Questions ==
 
-The FAQ can be found at http://apps.meow.fr/wp-retina-2x/faq/.
+Users, you will find the FAQ here: http://apps.meow.fr/wp-retina-2x/faq/.
 
-Developer, WP Retina 2x has a little API. Here are a few filters and actions you might want to use.
+Developers, WP Retina 2x has a little API. Here are a few filters and actions you might want to use.
+
+= Functions =
+* wr2x_get_retina_from_url( $url ): return the URL of the retina image (empty string if not found)
+* wr2x_get_retina( $syspath ): return the system path of the retina image (null if not found)
 
 = Actions =
 * wr2x_retina_file_added: called when a new retina file is created, 1st argument is $attachment_id (of the media) and second is the $retina_filepath
