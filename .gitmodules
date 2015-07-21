@@ -16,3 +16,6 @@
 [submodule "content/plugins/wp-migrate-db-pro"]
 	path = content/plugins/wp-migrate-db-pro
 	url = git@github.com:sccmain/wp-migrate-db-pro.git
+[submodule "content/plugins/gravityforms"]
+	path = content/plugins/gravityforms
+	url = git@github.com:sccmain/gravityforms.git
