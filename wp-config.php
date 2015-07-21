@@ -69,7 +69,7 @@ define('WPLANG', '');
 // ==========================================================
 if ( WP_LOCAL_SERVER ) {
  
-	define( 'WP_DEBUG', false );
+	define( 'WP_DEBUG', true );
 	define( 'WP_DEBUG_LOG', true ); // Stored in wp-content/debug.log
 	define( 'WP_DEBUG_DISPLAY', true );
  
