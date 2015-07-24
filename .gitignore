@@ -70,6 +70,7 @@ content/plugins/*
 !content/plugins/th-framework
 !content/plugins/gravityforms
 !content/plugins/wp-migrate-db-pro
+!content/plugins/wp-retina-2x
 
 
 #===========================#

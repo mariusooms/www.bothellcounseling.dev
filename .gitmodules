@@ -19,3 +19,6 @@
 [submodule "content/plugins/gravityforms"]
 	path = content/plugins/gravityforms
 	url = git@github.com:sccmain/gravityforms.git
+[submodule "content/plugins/wp-retina-2x"]
+	path = content/plugins/wp-retina-2x
+	url = git@github.com:wp-plugins/wp-retina-2x.git
