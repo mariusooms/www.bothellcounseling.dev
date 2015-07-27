@@ -57,4 +57,4 @@
 	url = git@github.com:wp-plugins/yet-another-related-posts-plugin.git
 [submodule "content/plugins/wordpress-seo"]
 	path = content/plugins/wordpress-seo
-	url = git@github.com:Yoast/wordpress-seo.git
+	url = git@github.com:mariusooms/wordpress-seo.git
