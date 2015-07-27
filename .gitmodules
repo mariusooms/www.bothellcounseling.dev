@@ -22,9 +22,6 @@
 [submodule "content/plugins/wp-retina-2x"]
 	path = content/plugins/wp-retina-2x
 	url = git@github.com:wp-plugins/wp-retina-2x.git
-[submodule "content/plugins/ajax-search-lite"]
-	path = content/plugins/ajax-search-lite
-	url = git@github.com:wp-plugins/ajax-search-lite.git
 [submodule "content/plugins/better-click-to-tweet"]
 	path = content/plugins/better-click-to-tweet
 	url = git@github.com:wp-plugins/better-click-to-tweet.git
@@ -58,3 +55,6 @@
 [submodule "content/plugins/wordpress-seo"]
 	path = content/plugins/wordpress-seo
 	url = git@github.com:mariusooms/wordpress-seo.git
+[submodule "content/plugins/ajax-search-lite"]
+	path = content/plugins/ajax-search-lite
+	url = git@github.com:mariusooms/ajax-search-lite.git
