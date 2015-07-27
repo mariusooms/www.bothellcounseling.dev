@@ -51,6 +51,7 @@ config/enviroments/*
 .htaccess
 wp/.htaccess
 
+
 #=============================================#
 #    wp-content, except plugins and themes    #
 #=============================================#
@@ -66,11 +67,23 @@ content/*
 #      Specific Plugins     #
 #===========================#
 content/plugins/*
+!content/plugins/ajax-search-lite
 !content/plugins/arche-utility
-!content/plugins/th-framework
+!content/plugins/better-click-to-tweet
+!content/plugins/fluid-video-embeds
 !content/plugins/gravityforms
+!content/plugins/gravityforms-html5-validation
+!content/plugins/manual-image-crop
+!content/plugins/menu-image
+!content/plugins/optinmonster
+!content/plugins/testimonials-by-woothemes
+!content/plugins/th-framework
+!content/plugins/tweeple
+!content/plugins/wordpress-seo
 !content/plugins/wp-migrate-db-pro
+!content/plugins/wp-migrate-db-pro-media-files
 !content/plugins/wp-retina-2x
+!content/plugins/yet-another-related-posts-plugin
 
 
 #===========================#
