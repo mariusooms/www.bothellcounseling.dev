@@ -70,6 +70,7 @@ content/plugins/*
 !content/plugins/ajax-search-lite
 !content/plugins/arche-utility
 !content/plugins/better-click-to-tweet
+!content/plugins/book-review
 !content/plugins/fluid-video-embeds
 !content/plugins/gravityforms
 !content/plugins/gravityforms-html5-validation

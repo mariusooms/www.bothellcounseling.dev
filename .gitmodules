@@ -58,3 +58,6 @@
 [submodule "content/plugins/ajax-search-lite"]
 	path = content/plugins/ajax-search-lite
 	url = git@github.com:mariusooms/ajax-search-lite.git
+[submodule "content/plugins/book-review"]
+	path = content/plugins/book-review
+	url = git@github.com:donnapep/book-review.git

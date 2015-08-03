@@ -79,6 +79,7 @@ if ( WP_LOCAL_SERVER ) {
 } else {
  
 	define( 'WP_DEBUG', false );
+	define( 'DISALLOW_FILE_MODS', true );
 }
 
 // ======================
