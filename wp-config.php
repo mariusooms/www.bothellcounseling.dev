@@ -67,7 +67,7 @@ define('WPLANG', '');
 // Debug mode
 // This conditional will check wether Debug mode should be on
 // ==========================================================
-if ( WP_LOCAL_SERVER ) {
+if ( WP_LOCAL_SERVER || WP_STABLE_SERVER ) {
  
 	define( 'WP_DEBUG', true );
 	define( 'WP_DEBUG_LOG', true ); // Stored in wp-content/debug.log
