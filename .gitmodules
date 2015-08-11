@@ -61,6 +61,3 @@
 [submodule "content/plugins/book-review"]
 	path = content/plugins/book-review
 	url = git@github.com:donnapep/book-review.git
-[submodule "content/plugins/easy-local-seo-locations"]
-	path = content/plugins/easy-local-seo-locations
-	url = git@github.com:sccmain/easy-local-seo-locations.git
