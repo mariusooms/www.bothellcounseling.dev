@@ -64,3 +64,6 @@
 [submodule "content/plugins/easy-local-seo-locations"]
 	path = content/plugins/easy-local-seo-locations
 	url = git@github.com:sccmain/easy-local-seo-locations.git
+[submodule "content/plugins/gravity-forms-google-analytics-event-tracking"]
+	path = content/plugins/gravity-forms-google-analytics-event-tracking
+	url = git@github.com:ronalfy/wordpress-gravity-forms-event-tracking.git

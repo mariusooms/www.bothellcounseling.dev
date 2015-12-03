@@ -74,6 +74,7 @@ content/plugins/*
 !content/plugins/easy-local-seo-locations
 !content/plugins/fluid-video-embeds
 !content/plugins/gravityforms
+!content/plugins/gravity-forms-google-analytics-event-tracking
 !content/plugins/gravityforms-html5-validation
 !content/plugins/manual-image-crop
 !content/plugins/menu-image
