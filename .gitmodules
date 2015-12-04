@@ -37,9 +37,6 @@
 [submodule "content/plugins/menu-image"]
 	path = content/plugins/menu-image
 	url = git@github.com:wp-plugins/menu-image.git
-[submodule "content/plugins/optinmonster"]
-	path = content/plugins/optinmonster
-	url = git@github.com:wp-plugins/optinmonster.git
 [submodule "content/plugins/testimonials-by-woothemes"]
 	path = content/plugins/testimonials-by-woothemes
 	url = git@github.com:wp-plugins/testimonials-by-woothemes.git
