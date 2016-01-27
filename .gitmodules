@@ -64,3 +64,6 @@
 [submodule "content/plugins/gravity-forms-google-analytics-event-tracking"]
 	path = content/plugins/gravity-forms-google-analytics-event-tracking
 	url = git@github.com:ronalfy/wordpress-gravity-forms-event-tracking.git
+[submodule "content/plugins/arche-banners"]
+	path = content/plugins/arche-banners
+	url = git@github.com:sccmain/arche-banners.git

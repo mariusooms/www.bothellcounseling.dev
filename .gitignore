@@ -68,6 +68,7 @@ content/*
 #===========================#
 content/plugins/*
 !content/plugins/ajax-search-lite
+!content/plugins/arche-banners
 !content/plugins/arche-utility
 !content/plugins/better-click-to-tweet
 !content/plugins/book-review
