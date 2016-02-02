@@ -67,3 +67,6 @@
 [submodule "content/plugins/arche-banners"]
 	path = content/plugins/arche-banners
 	url = git@github.com:sccmain/arche-banners.git
+[submodule "content/plugins/optinmonster"]
+	path = content/plugins/optinmonster
+	url = git@github.com:wp-plugins/optinmonster.git
