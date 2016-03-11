@@ -85,7 +85,7 @@ if ( WP_LOCAL_SERVER || WP_STABLE_SERVER ) {
 // ======================
 // Disable post revisions
 // ======================
-define( 'WP_POST_REVISIONS', false );
+define( 'WP_POST_REVISIONS', 10 );
 
 // ===================
 // Bootstrap WordPress
