@@ -13,54 +13,9 @@
 [submodule "content/plugins/th-framework"]
 	path = content/plugins/th-framework
 	url = git@github.com:thuijssoon/th-framework.git
-[submodule "content/plugins/wp-migrate-db-pro"]
-	path = content/plugins/wp-migrate-db-pro
-	url = git@github.com:sccmain/wp-migrate-db-pro.git
-[submodule "content/plugins/gravityforms"]
-	path = content/plugins/gravityforms
-	url = git@github.com:sccmain/gravityforms.git
-[submodule "content/plugins/wp-retina-2x"]
-	path = content/plugins/wp-retina-2x
-	url = git@github.com:wp-plugins/wp-retina-2x.git
-[submodule "content/plugins/fluid-video-embeds"]
-	path = content/plugins/fluid-video-embeds
-	url = git@github.com:wp-plugins/fluid-video-embeds.git
-[submodule "content/plugins/gravityforms-html5-validation"]
-	path = content/plugins/gravityforms-html5-validation
-	url = git@github.com:mariusooms/gravityforms-html5-validation.git
-[submodule "content/plugins/manual-image-crop"]
-	path = content/plugins/manual-image-crop
-	url = git@github.com:wp-plugins/manual-image-crop.git
-[submodule "content/plugins/menu-image"]
-	path = content/plugins/menu-image
-	url = git@github.com:wp-plugins/menu-image.git
-[submodule "content/plugins/testimonials-by-woothemes"]
-	path = content/plugins/testimonials-by-woothemes
-	url = git@github.com:wp-plugins/testimonials-by-woothemes.git
-[submodule "content/plugins/tweeple"]
-	path = content/plugins/tweeple
-	url = git@github.com:themeblvd/Tweeple.git
-[submodule "content/plugins/wp-migrate-db-pro-media-files"]
-	path = content/plugins/wp-migrate-db-pro-media-files
-	url = git@github.com:sccmain/wp-migrate-db-pro-media-files.git
-[submodule "content/plugins/yet-another-related-posts-plugin"]
-	path = content/plugins/yet-another-related-posts-plugin
-	url = git@github.com:wp-plugins/yet-another-related-posts-plugin.git
-[submodule "content/plugins/wordpress-seo"]
-	path = content/plugins/wordpress-seo
-	url = git@github.com:mariusooms/wordpress-seo.git
-[submodule "content/plugins/book-review"]
-	path = content/plugins/book-review
-	url = git@github.com:donnapep/book-review.git
 [submodule "content/plugins/easy-local-seo-locations"]
 	path = content/plugins/easy-local-seo-locations
 	url = git@github.com:sccmain/easy-local-seo-locations.git
-[submodule "content/plugins/gravity-forms-google-analytics-event-tracking"]
-	path = content/plugins/gravity-forms-google-analytics-event-tracking
-	url = git@github.com:ronalfy/wordpress-gravity-forms-event-tracking.git
 [submodule "content/plugins/arche-banners"]
 	path = content/plugins/arche-banners
 	url = git@github.com:sccmain/arche-banners.git
-[submodule "content/plugins/optinmonster"]
-	path = content/plugins/optinmonster
-	url = git@github.com:wp-plugins/optinmonster.git
